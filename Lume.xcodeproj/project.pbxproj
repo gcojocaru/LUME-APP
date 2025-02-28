@@ -16,15 +16,6 @@
 		8263E8EB2D6CA088009A5342 /* LumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263E8EA2D6CA088009A5342 /* LumeApp.swift */; };
 		8263E8EF2D6CA092009A5342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8EE2D6CA092009A5342 /* Assets.xcassets */; };
 		8263E8F22D6CA092009A5342 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8F12D6CA092009A5342 /* Preview Assets.xcassets */; };
-		82BB24682D6CAFD900F557F7 /* output_preset.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24672D6CAFD900F557F7 /* output_preset.json */; };
-		82BB24D12D6CCE8900F557F7 /* _ Film Grain ON 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */; };
-		82BB24D22D6CCE8900F557F7 /* Sensia 200 _ - 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */; };
-		82BB24D32D6CCE8900F557F7 /* Sensia 200 _ + 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */; };
-		82BB24D42D6CCE8900F557F7 /* _ RESET Equalitools 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CB2D6CCE8900F557F7 /* _ RESET Equalitools 2.json */; };
-		82BB24D52D6CCE8900F557F7 /* _ Film Grain OFF 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */; };
-		82BB24D62D6CCE8900F557F7 /* Sensia 200 _ - - 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */; };
-		82BB24D72D6CCE8900F557F7 /* Sensia 200 _ + + 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */; };
-		82BB24D82D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,15 +29,6 @@
 		8263E8EA2D6CA088009A5342 /* LumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumeApp.swift; sourceTree = "<group>"; };
 		8263E8EE2D6CA092009A5342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8263E8F12D6CA092009A5342 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		82BB24672D6CAFD900F557F7 /* output_preset.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output_preset.json; sourceTree = "<group>"; };
-		82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "_ Film Grain OFF 2.json"; sourceTree = "<group>"; };
-		82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "_ Film Grain ON 2.json"; sourceTree = "<group>"; };
-		82BB24CB2D6CCE8900F557F7 /* _ RESET Equalitools 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "_ RESET Equalitools 2.json"; sourceTree = "<group>"; };
-		82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ - 2.json"; sourceTree = "<group>"; };
-		82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ - - 2.json"; sourceTree = "<group>"; };
-		82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ -_1 2.json"; sourceTree = "<group>"; };
-		82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ + 2.json"; sourceTree = "<group>"; };
-		82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ + + 2.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +103,6 @@
 		8259EE9F2D71E93A00B2D8AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */,
-				82BB24672D6CAFD900F557F7 /* output_preset.json */,
-				82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */,
-				82BB24CB2D6CCE8900F557F7 /* _ RESET Equalitools 2.json */,
-				82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */,
-				82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */,
-				82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */,
-				82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */,
-				82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -241,15 +214,6 @@
 			files = (
 				8263E8F22D6CA092009A5342 /* Preview Assets.xcassets in Resources */,
 				8263E8EF2D6CA092009A5342 /* Assets.xcassets in Resources */,
-				82BB24682D6CAFD900F557F7 /* output_preset.json in Resources */,
-				82BB24D12D6CCE8900F557F7 /* _ Film Grain ON 2.json in Resources */,
-				82BB24D22D6CCE8900F557F7 /* Sensia 200 _ - 2.json in Resources */,
-				82BB24D32D6CCE8900F557F7 /* Sensia 200 _ + 2.json in Resources */,
-				82BB24D42D6CCE8900F557F7 /* _ RESET Equalitools 2.json in Resources */,
-				82BB24D52D6CCE8900F557F7 /* _ Film Grain OFF 2.json in Resources */,
-				82BB24D62D6CCE8900F557F7 /* Sensia 200 _ - - 2.json in Resources */,
-				82BB24D72D6CCE8900F557F7 /* Sensia 200 _ + + 2.json in Resources */,
-				82BB24D82D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
