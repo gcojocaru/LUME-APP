@@ -112,6 +112,7 @@ class FilterService {
             return nil
         }
         
+        // Create UIImage without specifying orientation to preserve the original
         return UIImage(cgImage: cgImage)
     }
 }

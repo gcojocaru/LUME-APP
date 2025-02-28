@@ -20,67 +20,27 @@ struct MainView: View {
                     .ignoresSafeArea()
                 
                 if let selectedImage = viewModel.selectedImage {
+                    // Image editor content
                     VStack(spacing: 20) {
                         // Image display area
-                        Image(uiImage: selectedImage)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxHeight: UIScreen.main.bounds.height * 0.6)
-                            .cornerRadius(12)
-                            .shadow(radius: 5)
+                        ImageDisplayView(image: selectedImage)
                         
                         // Filter controls
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 15) {
-                                ForEach(FilterType.allCases, id: \.self) { filter in
-                                    FilterButton(
-                                        filter: filter,
-                                        isSelected: viewModel.selectedFilter == filter,
-                                        action: { viewModel.applyFilter(filter) }
-                                    )
-                                }
-                            }
-                            .padding(.horizontal)
-                        }
-                        .frame(height: 80)
+                        FilterCarouselView(
+                            selectedFilter: viewModel.selectedFilter,
+                            onFilterSelected: { viewModel.applyFilter($0) }
+                        )
                         
                         // Action buttons
-                        HStack(spacing: 30) {
-                            Button(action: { viewModel.resetImage() }) {
-                                Label("Reset", systemImage: "arrow.counterclockwise")
-                            }
-                            .buttonStyle(ActionButtonStyle())
-                            
-                            Button(action: { viewModel.saveImage() }) {
-                                Label("Save", systemImage: "square.and.arrow.down")
-                            }
-                            .buttonStyle(ActionButtonStyle())
-                        }
-                        .padding(.top, 10)
+                        ActionButtonsView(
+                            onReset: { viewModel.resetImage() },
+                            onSave: { viewModel.saveImage() }
+                        )
                     }
                     .padding()
                 } else {
                     // Empty state
-                    VStack(spacing: 20) {
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.gray)
-                        
-                        Text("No Image Selected")
-                            .font(.title2)
-                            .foregroundColor(.gray)
-                        
-                        Button(action: { showingImagePicker = true }) {
-                            Text("Select a Photo")
-                                .font(.headline)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
-                    }
+                    EmptyStateView(onSelectPhoto: { showingImagePicker = true })
                 }
             }
             .navigationTitle("Photo Editor")
@@ -108,43 +68,6 @@ struct MainView: View {
                 Text(viewModel.errorMessage)
             }
         }
-    }
-}
-
-struct FilterButton: View {
-    let filter: FilterType
-    let isSelected: Bool
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            VStack {
-                Circle()
-                    .fill(filter.previewColor)
-                    .frame(width: 50, height: 50)
-                    .overlay(
-                        Circle()
-                            .stroke(isSelected ? Color.blue : Color.clear, lineWidth: 3)
-                    )
-                
-                Text(filter.name)
-                    .font(.caption)
-                    .foregroundColor(isSelected ? .primary : .secondary)
-            }
-        }
-    }
-}
-
-struct ActionButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding(.vertical, 12)
-            .padding(.horizontal, 20)
-            .background(Color.blue.opacity(0.8))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .scaleEffect(configuration.isPressed ? 0.95 : 1)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
     }
 }
 

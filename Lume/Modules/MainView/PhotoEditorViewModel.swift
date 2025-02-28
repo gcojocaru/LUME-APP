@@ -46,7 +46,8 @@ class PhotoEditorViewModel: ObservableObject {
         
         // Apply the filter using Core Image
         if let filteredImage = filterService.applyFilter(filter, to: originalImage) {
-            selectedImage = filteredImage
+            // Ensure we maintain the original image orientation
+            selectedImage = UIImage(cgImage: filteredImage.cgImage!, scale: filteredImage.scale, orientation: originalImage.imageOrientation)
         } else {
             showError("Failed to apply filter")
         }
