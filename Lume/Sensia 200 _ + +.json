@@ -1,0 +1,63 @@
+{
+    "exposure": 0.0,
+    "contrast": 0.0,
+    "saturation": 0.0,
+    "highlights": 0.0,
+    "shadows": 0.0,
+    "whiteBalance": {
+        "temp": 6500,
+        "tint": 0.0
+    },
+    "toneCurve": [
+        {
+            "x": 0.0,
+            "y": 4.0
+        },
+        {
+            "x": 116.0,
+            "y": 141.0
+        },
+        {
+            "x": 255.0,
+            "y": 255.0
+        }
+    ],
+    "hueAdjustments": {
+        "Red": 0.0,
+        "Orange": 0.0,
+        "Yellow": 0.0,
+        "Green": 0.0,
+        "Aqua": 0.0,
+        "Blue": 0.0,
+        "Purple": 0.0,
+        "Magenta": 0.0
+    },
+    "saturationAdjustments": {
+        "Red": 0.0,
+        "Orange": 0.0,
+        "Yellow": 0.0,
+        "Green": 0.0,
+        "Aqua": 0.0,
+        "Blue": 0.0,
+        "Purple": 0.0,
+        "Magenta": 0.0
+    },
+    "luminanceAdjustments": {
+        "Red": 0.0,
+        "Orange": 0.0,
+        "Yellow": 0.0,
+        "Green": 0.0,
+        "Aqua": 0.0,
+        "Blue": 0.0,
+        "Purple": 0.0,
+        "Magenta": 0.0
+    },
+    "clarity": 0.0,
+    "vibrance": 0.0,
+    "sharpness": 0.0,
+    "noiseReduction": 0.0,
+    "grainAmount": 0.0,
+    "grainSize": 0.0,
+    "grainFrequency": 0.0,
+    "lutImage": null
+}
