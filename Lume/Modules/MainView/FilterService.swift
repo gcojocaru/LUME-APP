@@ -9,6 +9,15 @@ import SwiftUI
 import CoreImage
 import CoreImage.CIFilterBuiltins
 
+//
+//  FilterService.swift
+//  Lume
+//
+
+import SwiftUI
+import CoreImage
+import CoreImage.CIFilterBuiltins
+
 // Filter types enum
 enum FilterType: String, CaseIterable {
     case none = "Original"
@@ -72,12 +81,19 @@ enum FilterType: String, CaseIterable {
             return false
         }
     }
+    
+    // Returns true if this filter supports image adjustments
+    var supportsAdjustments: Bool {
+        // All filters except 'none' support adjustments
+        return self != .none
+    }
 }
 
 // Filter Service to apply Core Image filters
 class FilterService {
     private let context = CIContext()
     
+    // Apply a single filter to an image
     func applyFilter(_ filter: FilterType, to inputImage: UIImage, intensity: Double? = nil) -> UIImage? {
         guard let ciImage = CIImage(image: inputImage) else { return nil }
         
@@ -139,7 +155,66 @@ class FilterService {
             return nil
         }
         
-        // Create UIImage without specifying orientation to preserve the original
+        // Create UIImage with original orientation
         return UIImage(cgImage: cgImage)
+    }
+    
+    // Apply adjustments to an image
+    func applyAdjustments(to image: UIImage, adjustments: ImageAdjustments) -> UIImage? {
+        guard let ciImage = CIImage(image: image) else { return nil }
+        
+        var processedImage = ciImage
+        
+        // Apply brightness adjustment if needed
+        if adjustments.brightness != 0 {
+            let brightnessFilter = CIFilter.colorControls()
+            brightnessFilter.inputImage = processedImage
+            brightnessFilter.brightness = Float(adjustments.brightness)
+            if let outputImage = brightnessFilter.outputImage {
+                processedImage = outputImage
+            }
+        }
+        
+        // Apply contrast adjustment if needed
+        if adjustments.contrast != 0 {
+            let contrastFilter = CIFilter.colorControls()
+            contrastFilter.inputImage = processedImage
+            contrastFilter.contrast = Float(1.0 + adjustments.contrast)
+            if let outputImage = contrastFilter.outputImage {
+                processedImage = outputImage
+            }
+        }
+        
+        // Apply saturation adjustment if needed
+        if adjustments.saturation != 0 {
+            let saturationFilter = CIFilter.colorControls()
+            saturationFilter.inputImage = processedImage
+            saturationFilter.saturation = Float(1.0 + adjustments.saturation)
+            if let outputImage = saturationFilter.outputImage {
+                processedImage = outputImage
+            }
+        }
+        
+        // Convert back to UIImage
+        guard let cgImage = context.createCGImage(processedImage, from: processedImage.extent) else {
+            return nil
+        }
+        
+        return UIImage(cgImage: cgImage)
+    }
+    
+    // Combined method to apply both filter and adjustments
+    func processImage(image: UIImage, filter: FilterType, filterIntensity: Double, adjustments: ImageAdjustments) -> UIImage? {
+        // First apply the selected filter
+        guard let filteredImage = applyFilter(filter, to: image, intensity: filterIntensity) else {
+            return nil
+        }
+        
+        // Then apply any adjustments if they exist
+        if adjustments.brightness != 0 || adjustments.contrast != 0 || adjustments.saturation != 0 {
+            return applyAdjustments(to: filteredImage, adjustments: adjustments)
+        }
+        
+        return filteredImage
     }
 }

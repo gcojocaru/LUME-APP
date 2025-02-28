@@ -13,6 +13,11 @@
 		8255A15D2D7209970023EA79 /* Comonents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A15C2D7209970023EA79 /* Comonents.swift */; };
 		8255A15F2D720C150023EA79 /* FilterIntensitySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A15E2D720C150023EA79 /* FilterIntensitySlider.swift */; };
 		8255A1612D720C890023EA79 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1602D720C890023EA79 /* AppTheme.swift */; };
+		8255A1632D72120C0023EA79 /* ImageEditHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1622D72120C0023EA79 /* ImageEditHistory.swift */; };
+		8255A1652D72122A0023EA79 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1642D72122A0023EA79 /* AppSettings.swift */; };
+		8255A1682D7212540023EA79 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1672D7212540023EA79 /* SettingsView.swift */; };
+		8255A16B2D7212710023EA79 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A16A2D7212710023EA79 /* OnboardingView.swift */; };
+		8255A16D2D72142C0023EA79 /* AdjustmentControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A16C2D72142C0023EA79 /* AdjustmentControls.swift */; };
 		8263E8EB2D6CA088009A5342 /* LumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263E8EA2D6CA088009A5342 /* LumeApp.swift */; };
 		8263E8EF2D6CA092009A5342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8EE2D6CA092009A5342 /* Assets.xcassets */; };
 		8263E8F22D6CA092009A5342 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8F12D6CA092009A5342 /* Preview Assets.xcassets */; };
@@ -25,6 +30,11 @@
 		8255A15C2D7209970023EA79 /* Comonents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comonents.swift; sourceTree = "<group>"; };
 		8255A15E2D720C150023EA79 /* FilterIntensitySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterIntensitySlider.swift; sourceTree = "<group>"; };
 		8255A1602D720C890023EA79 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		8255A1622D72120C0023EA79 /* ImageEditHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditHistory.swift; sourceTree = "<group>"; };
+		8255A1642D72122A0023EA79 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		8255A1672D7212540023EA79 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8255A16A2D7212710023EA79 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8255A16C2D72142C0023EA79 /* AdjustmentControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustmentControls.swift; sourceTree = "<group>"; };
 		8263E8E72D6CA088009A5342 /* Lume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8263E8EA2D6CA088009A5342 /* LumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumeApp.swift; sourceTree = "<group>"; };
 		8263E8EE2D6CA092009A5342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +68,26 @@
 			children = (
 				8255A15C2D7209970023EA79 /* Comonents.swift */,
 				8255A15E2D720C150023EA79 /* FilterIntensitySlider.swift */,
+				8255A1622D72120C0023EA79 /* ImageEditHistory.swift */,
+				8255A16C2D72142C0023EA79 /* AdjustmentControls.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8255A1662D72123A0023EA79 /* Setings */ = {
+			isa = PBXGroup;
+			children = (
+				8255A1672D7212540023EA79 /* SettingsView.swift */,
+			);
+			path = Setings;
+			sourceTree = "<group>";
+		};
+		8255A1692D7212660023EA79 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8255A16A2D7212710023EA79 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		8259EE992D71E90500B2D8AC /* App */ = {
@@ -80,6 +108,8 @@
 		8259EE9C2D71E91F00B2D8AC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8255A1692D7212660023EA79 /* Onboarding */,
+				8255A1662D72123A0023EA79 /* Setings */,
 				8255A1532D7207330023EA79 /* MainView */,
 			);
 			path = Modules;
@@ -89,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8255A1602D720C890023EA79 /* AppTheme.swift */,
+				8255A1642D72122A0023EA79 /* AppSettings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,11 +257,16 @@
 			files = (
 				8255A1612D720C890023EA79 /* AppTheme.swift in Sources */,
 				8255A15F2D720C150023EA79 /* FilterIntensitySlider.swift in Sources */,
+				8255A16D2D72142C0023EA79 /* AdjustmentControls.swift in Sources */,
 				8263E8EB2D6CA088009A5342 /* LumeApp.swift in Sources */,
 				8255A15A2D72077E0023EA79 /* FilterService.swift in Sources */,
+				8255A1632D72120C0023EA79 /* ImageEditHistory.swift in Sources */,
+				8255A1682D7212540023EA79 /* SettingsView.swift in Sources */,
+				8255A1652D72122A0023EA79 /* AppSettings.swift in Sources */,
 				8255A15D2D7209970023EA79 /* Comonents.swift in Sources */,
 				8255A1552D72073D0023EA79 /* MainView.swift in Sources */,
 				8255A1582D72075C0023EA79 /* PhotoEditorViewModel.swift in Sources */,
+				8255A16B2D7212710023EA79 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,29 @@ import SwiftUI
 
 @main
 struct LumeApp: App {
+    @StateObject private var appSettings = AppSettings()
+    @State private var showOnboarding = false
     
     var body: some Scene {
         WindowGroup {
-           MainView()
+            ZStack {
+                MainView()
+                    .environmentObject(appSettings)
+                    .preferredColorScheme(appSettings.colorScheme)
+                
+                if showOnboarding {
+                    OnboardingView(showOnboarding: $showOnboarding)
+                        .transition(.opacity)
+                        .zIndex(1)
+                }
+            }
+            .onAppear {
+                // Show onboarding on first launch
+                if !appSettings.hasCompletedOnboarding {
+                    showOnboarding = true
+                    appSettings.hasCompletedOnboarding = true
+                }
+            }
         }
     }
 }
