@@ -7,19 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8255A1552D72073D0023EA79 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1542D72073D0023EA79 /* MainView.swift */; };
+		8255A1582D72075C0023EA79 /* PhotoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1572D72075C0023EA79 /* PhotoEditorViewModel.swift */; };
+		8255A15A2D72077E0023EA79 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255A1592D72077E0023EA79 /* FilterService.swift */; };
 		8263E8EB2D6CA088009A5342 /* LumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263E8EA2D6CA088009A5342 /* LumeApp.swift */; };
-		8263E8ED2D6CA088009A5342 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263E8EC2D6CA088009A5342 /* ContentView.swift */; };
 		8263E8EF2D6CA092009A5342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8EE2D6CA092009A5342 /* Assets.xcassets */; };
 		8263E8F22D6CA092009A5342 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8263E8F12D6CA092009A5342 /* Preview Assets.xcassets */; };
-		8263E8F92D6CA0C4009A5342 /* PresetProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8263E8F82D6CA0C4009A5342 /* PresetProcessor.swift */; };
-		827062772D71C3FD009EF07A /* custom-preset-manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827062762D71C3FD009EF07A /* custom-preset-manager.swift */; };
-		827062792D71C413009EF07A /* image-cache-manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827062782D71C413009EF07A /* image-cache-manager.swift */; };
-		8270627B2D71D4DE009EF07A /* image-views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270627A2D71D4DE009EF07A /* image-views.swift */; };
-		8270627D2D71D58C009EF07A /* preset-manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270627C2D71D58C009EF07A /* preset-manager.swift */; };
-		8270627F2D71D75E009EF07A /* preset-selection-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270627E2D71D75E009EF07A /* preset-selection-view.swift */; };
-		827062812D71D794009EF07A /* adjustment-sliders-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827062802D71D794009EF07A /* adjustment-sliders-view.swift */; };
-		827062832D71D7A6009EF07A /* action-button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827062822D71D7A6009EF07A /* action-button.swift */; };
-		827062852D71D7E8009EF07A /* history-view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827062842D71D7E8009EF07A /* history-view.swift */; };
 		82BB24682D6CAFD900F557F7 /* output_preset.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24672D6CAFD900F557F7 /* output_preset.json */; };
 		82BB24D12D6CCE8900F557F7 /* _ Film Grain ON 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */; };
 		82BB24D22D6CCE8900F557F7 /* Sensia 200 _ - 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */; };
@@ -29,24 +22,16 @@
 		82BB24D62D6CCE8900F557F7 /* Sensia 200 _ - - 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */; };
 		82BB24D72D6CCE8900F557F7 /* Sensia 200 _ + + 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */; };
 		82BB24D82D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */; };
-		82BB24DD2D6CD20A00F557F7 /* vintageFilmPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BB24DC2D6CD20A00F557F7 /* vintageFilmPreset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8255A1542D72073D0023EA79 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8255A1572D72075C0023EA79 /* PhotoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewModel.swift; sourceTree = "<group>"; };
+		8255A1592D72077E0023EA79 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		8263E8E72D6CA088009A5342 /* Lume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8263E8EA2D6CA088009A5342 /* LumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumeApp.swift; sourceTree = "<group>"; };
-		8263E8EC2D6CA088009A5342 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8263E8EE2D6CA092009A5342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8263E8F12D6CA092009A5342 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8263E8F82D6CA0C4009A5342 /* PresetProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetProcessor.swift; sourceTree = "<group>"; };
-		827062762D71C3FD009EF07A /* custom-preset-manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "custom-preset-manager.swift"; sourceTree = "<group>"; };
-		827062782D71C413009EF07A /* image-cache-manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image-cache-manager.swift"; sourceTree = "<group>"; };
-		8270627A2D71D4DE009EF07A /* image-views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image-views.swift"; sourceTree = "<group>"; };
-		8270627C2D71D58C009EF07A /* preset-manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "preset-manager.swift"; sourceTree = "<group>"; };
-		8270627E2D71D75E009EF07A /* preset-selection-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "preset-selection-view.swift"; sourceTree = "<group>"; };
-		827062802D71D794009EF07A /* adjustment-sliders-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "adjustment-sliders-view.swift"; sourceTree = "<group>"; };
-		827062822D71D7A6009EF07A /* action-button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "action-button.swift"; sourceTree = "<group>"; };
-		827062842D71D7E8009EF07A /* history-view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "history-view.swift"; sourceTree = "<group>"; };
 		82BB24672D6CAFD900F557F7 /* output_preset.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output_preset.json; sourceTree = "<group>"; };
 		82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "_ Film Grain OFF 2.json"; sourceTree = "<group>"; };
 		82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "_ Film Grain ON 2.json"; sourceTree = "<group>"; };
@@ -56,7 +41,6 @@
 		82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ -_1 2.json"; sourceTree = "<group>"; };
 		82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ + 2.json"; sourceTree = "<group>"; };
 		82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sensia 200 _ + + 2.json"; sourceTree = "<group>"; };
-		82BB24DC2D6CD20A00F557F7 /* vintageFilmPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vintageFilmPreset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +54,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8255A1532D7207330023EA79 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				8255A1542D72073D0023EA79 /* MainView.swift */,
+				8255A1572D72075C0023EA79 /* PhotoEditorViewModel.swift */,
+				8255A1592D72077E0023EA79 /* FilterService.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		8259EE992D71E90500B2D8AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8263E8EA2D6CA088009A5342 /* LumeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8259EE9A2D71E91200B2D8AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8259EE9C2D71E91F00B2D8AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8255A1532D7207330023EA79 /* MainView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8259EE9D2D71E92B00B2D8AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8259EE9E2D71E93300B2D8AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8259EE9F2D71E93A00B2D8AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */,
+				82BB24672D6CAFD900F557F7 /* output_preset.json */,
+				82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */,
+				82BB24CB2D6CCE8900F557F7 /* _ RESET Equalitools 2.json */,
+				82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */,
+				82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */,
+				82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */,
+				82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */,
+				82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8263E8DE2D6CA088009A5342 = {
 			isa = PBXGroup;
 			children = (
@@ -89,29 +136,15 @@
 		8263E8E92D6CA088009A5342 /* Lume */ = {
 			isa = PBXGroup;
 			children = (
+				8259EE9F2D71E93A00B2D8AC /* Resources */,
+				8259EE9E2D71E93300B2D8AC /* Services */,
+				8259EE9D2D71E92B00B2D8AC /* Utils */,
+				8259EE9C2D71E91F00B2D8AC /* Modules */,
+				8259EE9A2D71E91200B2D8AC /* Models */,
+				8259EE992D71E90500B2D8AC /* App */,
 				82BB24D92D6CD1DB00F557F7 /* Filters */,
-				8263E8EA2D6CA088009A5342 /* LumeApp.swift */,
-				827062802D71D794009EF07A /* adjustment-sliders-view.swift */,
-				8270627C2D71D58C009EF07A /* preset-manager.swift */,
-				8270627E2D71D75E009EF07A /* preset-selection-view.swift */,
-				827062822D71D7A6009EF07A /* action-button.swift */,
-				8263E8EC2D6CA088009A5342 /* ContentView.swift */,
-				827062842D71D7E8009EF07A /* history-view.swift */,
-				8270627A2D71D4DE009EF07A /* image-views.swift */,
 				8263E8EE2D6CA092009A5342 /* Assets.xcassets */,
-				82BB24672D6CAFD900F557F7 /* output_preset.json */,
-				827062762D71C3FD009EF07A /* custom-preset-manager.swift */,
-				827062782D71C413009EF07A /* image-cache-manager.swift */,
 				8263E8F02D6CA092009A5342 /* Preview Content */,
-				8263E8F82D6CA0C4009A5342 /* PresetProcessor.swift */,
-				82BB24C92D6CCE8900F557F7 /* _ Film Grain OFF 2.json */,
-				82BB24CA2D6CCE8900F557F7 /* _ Film Grain ON 2.json */,
-				82BB24CB2D6CCE8900F557F7 /* _ RESET Equalitools 2.json */,
-				82BB24CC2D6CCE8900F557F7 /* Sensia 200 _ - 2.json */,
-				82BB24CD2D6CCE8900F557F7 /* Sensia 200 _ - - 2.json */,
-				82BB24CE2D6CCE8900F557F7 /* Sensia 200 _ -_1 2.json */,
-				82BB24CF2D6CCE8900F557F7 /* Sensia 200 _ + 2.json */,
-				82BB24D02D6CCE8900F557F7 /* Sensia 200 _ + + 2.json */,
 			);
 			path = Lume;
 			sourceTree = "<group>";
@@ -127,7 +160,6 @@
 		82BB24D92D6CD1DB00F557F7 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
-				82BB24DC2D6CD20A00F557F7 /* vintageFilmPreset.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -211,18 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8263E8F92D6CA0C4009A5342 /* PresetProcessor.swift in Sources */,
-				8263E8ED2D6CA088009A5342 /* ContentView.swift in Sources */,
-				8270627D2D71D58C009EF07A /* preset-manager.swift in Sources */,
 				8263E8EB2D6CA088009A5342 /* LumeApp.swift in Sources */,
-				8270627B2D71D4DE009EF07A /* image-views.swift in Sources */,
-				8270627F2D71D75E009EF07A /* preset-selection-view.swift in Sources */,
-				827062772D71C3FD009EF07A /* custom-preset-manager.swift in Sources */,
-				827062852D71D7E8009EF07A /* history-view.swift in Sources */,
-				827062792D71C413009EF07A /* image-cache-manager.swift in Sources */,
-				827062812D71D794009EF07A /* adjustment-sliders-view.swift in Sources */,
-				82BB24DD2D6CD20A00F557F7 /* vintageFilmPreset.swift in Sources */,
-				827062832D71D7A6009EF07A /* action-button.swift in Sources */,
+				8255A15A2D72077E0023EA79 /* FilterService.swift in Sources */,
+				8255A1552D72073D0023EA79 /* MainView.swift in Sources */,
+				8255A1582D72075C0023EA79 /* PhotoEditorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
