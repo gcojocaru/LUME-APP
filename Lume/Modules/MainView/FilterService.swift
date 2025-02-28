@@ -48,16 +48,43 @@ enum FilterType: String, CaseIterable {
             return Color(red: 0.6, green: 0.8, blue: 1.0)
         }
     }
+    
+    // Default intensity value for each filter
+    var defaultIntensity: Double {
+        switch self {
+        case .none:
+            return 0.0
+        case .sepia, .vibrant:
+            return 0.8
+        default:
+            return 1.0
+        }
+    }
+    
+    // Returns true if this filter supports intensity adjustment
+    var supportsIntensity: Bool {
+        switch self {
+        case .none:
+            return false
+        case .sepia, .vibrant:
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 // Filter Service to apply Core Image filters
 class FilterService {
     private let context = CIContext()
     
-    func applyFilter(_ filter: FilterType, to inputImage: UIImage) -> UIImage? {
+    func applyFilter(_ filter: FilterType, to inputImage: UIImage, intensity: Double? = nil) -> UIImage? {
         guard let ciImage = CIImage(image: inputImage) else { return nil }
         
         var filteredImage: CIImage?
+        
+        // Use provided intensity or default
+        let filterIntensity = intensity ?? filter.defaultIntensity
         
         switch filter {
         case .none:
@@ -66,7 +93,7 @@ class FilterService {
         case .sepia:
             let filter = CIFilter.sepiaTone()
             filter.inputImage = ciImage
-            filter.intensity = 0.8
+            filter.intensity = Float(filterIntensity)
             filteredImage = filter.outputImage
             
         case .noir:
@@ -77,7 +104,7 @@ class FilterService {
         case .vibrant:
             let filter = CIFilter.vibrance()
             filter.inputImage = ciImage
-            filter.amount = 1.0
+            filter.amount = Float(filterIntensity)
             filteredImage = filter.outputImage
             
         case .chrome:
